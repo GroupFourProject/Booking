@@ -7,6 +7,7 @@ import javax.persistence.*;
 @Entity
 public class Booking {
 	@Id
+	@GeneratedValue
     private int bookingId;
 	private int showId;
 	private int userId;

@@ -23,7 +23,7 @@ public class BookingService {
 	public boolean update(Booking b) {
 		return bookingDAOImpl.updateBooking(b);
 	}
-	public boolean delete(Booking b) {
-		return bookingDAOImpl.deleteBooking(b);
+	public boolean delete(int id) {
+		return bookingDAOImpl.deleteBooking(id);
 	}
 }

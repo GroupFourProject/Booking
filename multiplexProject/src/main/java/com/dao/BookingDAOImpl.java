@@ -54,11 +54,12 @@ public class BookingDAOImpl implements BookingDAO {
 	}
 
 	@Override
-	public boolean deleteBooking(Booking b) {
+	public boolean deleteBooking(int id) {
 		// TODO Auto-generated method stub
 		Session session = sessionFactory.openSession();
+		Booking booking=session.find(Booking.class,id);
 		session.getTransaction().begin();
-		session.delete(b);
+		session.delete(booking);
 		session.flush();
 		session.getTransaction().commit();
 		session.close();

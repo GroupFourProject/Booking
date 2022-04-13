@@ -11,6 +11,6 @@ public void addBooking(Booking b);
 public Booking find(int id);
 public List<Booking> findAll();
 public boolean updateBooking(Booking b);
-public boolean deleteBooking(Booking b);
+public boolean deleteBooking(int id);
 
 }
